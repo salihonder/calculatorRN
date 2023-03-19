@@ -11,12 +11,17 @@ import CalculationScreen from './src/screens/CalculationScreen';
 
 // App
 const App = () => {
+  const [input, setInput] = useState("")
+  const [output, setOutput] = useState("")
 
   return (
     <SafeAreaView style={Styles.container}>
       <Header />
-      <CalculationScreen />
-      <ButtonsArea />
+      <CalculationScreen
+        output={output}
+        input={input}
+      />
+      <ButtonsArea setInput={setInput} setOutput={setOutput} />
     </SafeAreaView>
   );
 }
@@ -26,7 +31,7 @@ const Styles = StyleSheet.create({
   container: {
 
     flex: 1,
-    backgroundColor:"rgba(74, 66, 66, 0.75)",
+    backgroundColor: "rgba(74, 66, 66, 0.75)",
     paddingHorizontal: 24
   },
   button: {
