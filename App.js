@@ -4,10 +4,11 @@ import { Text, StyleSheet, SafeAreaView, Pressable } from 'react-native';
 
 // Components
 import Header from './src/components/Header';
-
+import Ilhan from './src/components/Ilhan';
 // Screens
 import ButtonsArea from './src/screens/ButtonsArea';
 import CalculationScreen from './src/screens/CalculationScreen';
+
 
 // App
 const App = () => {
@@ -16,7 +17,7 @@ const App = () => {
 
   return (
     <SafeAreaView style={Styles.container}>
-      <Header />
+      <Ilhan />
       <CalculationScreen
         output={output}
         input={input}
