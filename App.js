@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { Text, StyleSheet, SafeAreaView, Pressable } from 'react-native';
 
 // Components
-import Header from './src/components/Header';
+import Manal from './src/components/Manal';
 
 // Screens
 import ButtonsArea from './src/screens/ButtonsArea';
@@ -16,7 +16,7 @@ const App = () => {
 
   return (
     <SafeAreaView style={Styles.container}>
-      <Header />
+      <Manal />
       <CalculationScreen
         output={output}
         input={input}
